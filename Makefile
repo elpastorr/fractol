@@ -38,7 +38,7 @@ endif
 all: $(NAME)
 
 $(NAME): $(OBJS) $(HEADER)
-	gcc -g $(CFLAGS) $(OBJS) $(FLAGS) -o $(NAME)
+	gcc -g -fPIE $(CFLAGS) $(OBJS) $(FLAGS) -o $(NAME)
 
 norme:
 	norminette ./$(HEADER)
