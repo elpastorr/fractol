@@ -1,5 +1,19 @@
 #include "fractol.h"
 
+float	complex_size(t_complex comp)
+{
+	return (comp.r * comp.r + comp.i * comp.i);
+}
+
+t_complex	init_complex(float r, float i)
+{
+	t_complex	new_complex;
+
+	new_complex.r = r;
+	new_complex.i = i;
+	return (new_complex);
+}
+
 t_complex	add_complex(t_complex comp1, t_complex comp2)
 {
 	t_complex	result;
