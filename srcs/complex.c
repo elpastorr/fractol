@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   complex.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: elpastor <elpastor@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/31 17:19:59 by elpastor          #+#    #+#             */
+/*   Updated: 2022/03/31 17:25:51 by elpastor         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 float	complex_size(t_complex comp)
@@ -31,26 +43,3 @@ t_complex	square_complex(t_complex comp)
 	result.i = 2 * comp.r * comp.i;
 	return (result);
 }
-
-/*int	main(int ac, char **av)
-{
-	t_complex	*oui;
-
-	oui = malloc(sizeof(t_complex));
-	oui.x = 1.2142;
-	oui.y = 2.1222;
-	printf("comp = %f + %fi\n", oui.x, oui.y);
-	printf("aled\n");
-	oui = square_complex(oui);
-	printf("aled\n");
-	printf("comp = %f + %fi\n", oui.x, oui.y);
-}
-
-t_complex	multiply_complex(t_complex comp1, t_complex comp2)
-{
-	t_complex	*new_comp;
-
-	new_comp.x = (comp1.x * comp2.x) - (comp1.y * comp2.y);
-	new_comp.y = (comp1.x * comp2.y) + (comp1.y * comp2.x);
-
-}*/
