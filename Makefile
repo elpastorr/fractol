@@ -4,17 +4,19 @@ DIR_S = srcs/
 
 HEADER = includes/
 
-SOURCES =	main.c \
-			complex.c \
+SOURCES =	complex.c \
 			hooks.c \
-			print.c
+			main.c \
+			print.c \
+			sets.c \
+			utils.c
 
 
 SRCS = $(addprefix $(DIR_S),$(SOURCES))
 
 OBJS = $(SRCS:.c=.o)
 
-CFLAGS = -I $(HEADER) -Wall -Werror -Wextra  -D NUM_THREADS=$(NUM_THREADS)
+CFLAGS = -I $(HEADER) -Wall -Werror -Wextra -D NUM_THREADS=$(NUM_THREADS)
 
 MACOS_MACRO = -D MACOS
 
